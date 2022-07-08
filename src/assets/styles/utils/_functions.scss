@@ -1,0 +1,3 @@
+@function container-width($width: $container-width, $offset: $gap) {
+    @return calc(#{$width} + #{$offset} * 2);
+}

@@ -1,0 +1,52 @@
+/* set default body styles */
+body {
+    min-height: 100%;
+    position: relative;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    font-family: $defFonts;
+    font-size: 100%;
+    line-height: normal;
+    color: #000;
+}
+
+/* default class */
+
+.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    max-width: container-width($container-width, $gap);
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: #{$gap};
+    padding-right: #{$gap};
+    box-sizing: border-box;
+
+    @include clearfix;
+
+    &--fluid {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+}
+
+/* app */
+
+.app {
+    max-width: 100%;
+    display: block;
+    width: 100%;
+    flex-grow: 1;
+    min-height: 1px;
+}
