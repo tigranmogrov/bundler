@@ -113,7 +113,6 @@ li {
 
 a[href] {
   text-decoration: none;
-  background: transparent;
 }
 
 a[href]:hover {
@@ -137,7 +136,7 @@ a:focus {
 
 input[type="button"], /* 1 */
 input[type="reset"],
-input[type="submit"]
+input[type="submit"],
 a[href],
 button {
   cursor: pointer;
@@ -148,7 +147,7 @@ button {
 
 input[type="button"], /* 1 */
 input[type="reset"],
-input[type="submit"]
+input[type="submit"],
 a[href],
 button {
   &:disabled,
