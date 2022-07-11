@@ -30,6 +30,6 @@ module.exports = merge(common, {
 
     plugins: plugins.dev,
 
-    entry: {['environment']: entry.environment}
+    entry: {environment: entry.environment}
 
 });

@@ -4,25 +4,25 @@
 
 #### NPM Version
 
-`Please to use npm version >=8.5.5`
+`Please to use npm version >=7.24.2`
 
 #### Development server
 
-Run `npm dev` for a dev server.
-Navigate to `http://localhost:3000/`.
+Run `npm dev` for a dev server. \
+Navigate to `http://localhost:3000/`. \
 The app will automatically reload if you change
 any of the source files.
 
 #### Build
 
-Run `npm run build` to build the project.
+Run `npm run build` to build the project.\
 The build artifacts will be stored in the `dist/` directory.
 
 * Use the `npm run prod` command for a production build.
 
 #### Watch
 
-Run `npm run watch` to watch the project.
+Run `npm run watch` to watch the project.\
 The build artifacts will be stored in the `dist/` directory.
 
 #### Sourcemap in the build/prod or watch
@@ -31,19 +31,19 @@ Add the flag `-d source-map`
 
 For example
 
-`"build": "webpack -c config/build.js -d source-map"` <br>
+`"build": "webpack -c config/build.js -d source-map"`
 
 `"watch": "webpack --watch -c config/prod.js -d source-map"`
 
 #### Html minify `config/plugins`
 
-Change the value in GetHtmlWebpackPlugins.
+Change the value in GetHtmlWebpackPlugins.\
 collapseWhitespace: true/false
 
 #### Linters
 
-Run `npm run lint` to find problematic patterns or code
-that doesn't adhere to certain style guidelines in the
+Run `npm run lint` to find problematic patterns or code\
+that doesn't adhere to certain style guidelines in the\
 project. You can also use `npm run lint-fix` to fix them.
 
 #### Here's an example how to use
@@ -79,7 +79,7 @@ const workChunk = getHtmlWebpackPlugins( './src/work', 'html' );
 const allHtmlChunk = [ ...indexChunk, ...workChunk ];
 ```
 
-##### Metatags description and keywords are in webpack.config.js in the variable DEFAULTS
+##### Metatags description and keywords are in webpack.config.js <br>in the variable DEFAULTS
 ```html
 <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
 <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
