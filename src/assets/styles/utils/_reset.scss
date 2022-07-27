@@ -70,9 +70,7 @@ option:focus,
 select,
 select:focus,
 textarea:focus,
-textarea,
-button,
-button:focus {
+textarea {
   outline: none;
 }
 
@@ -128,7 +126,8 @@ a:hover {
 
 /* Address `outline` inconsistency between Chrome and other browsers */
 
-a:focus {
+a:focus,
+button:focus{
   outline: thin dotted;
 }
 
