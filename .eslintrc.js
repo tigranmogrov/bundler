@@ -4,7 +4,7 @@ module.exports = {
         es6: true,
     },
     extends: [
-        "eslint:recommended",
+        'eslint:recommended',
     ],
     globals: {
         Atomics: 'readonly',
@@ -15,7 +15,7 @@ module.exports = {
         'no-console': 'warn',
         'indent': [
             'error',
-            'tab',
+            4,
             {'SwitchCase': 2}
         ],
         'no-use-before-define': 'error',
@@ -42,6 +42,6 @@ module.exports = {
         'no-unused-vars': 'error'
     },
     parserOptions: {
-        "sourceType": "module"
+        'sourceType': 'module'
     }
 };

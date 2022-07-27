@@ -67,9 +67,7 @@ module.exports = {
         new MiniCssExtractPlugin({filename: 'assets/styles/[name].[contenthash].css',}),
     ],
 
-    dev: [
-        new webpack.HotModuleReplacementPlugin()
-    ],
+    dev: [],
 
     prod: [
         new CopyWebpackPlugin({
@@ -83,7 +81,7 @@ module.exports = {
         new CssMinimizerPlugin({
             minimizerOptions: {
                 preset: [
-                    "default",
+                    'default',
                     {
                         discardComments: {removeAll: true},
                     },

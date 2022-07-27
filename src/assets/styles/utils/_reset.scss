@@ -132,6 +132,13 @@ a:focus {
   outline: thin dotted;
 }
 
+/* reset color */
+
+a {
+    color: inherit;
+}
+
+
 /* set cursor pointer for accessibility */
 
 input[type="button"], /* 1 */
@@ -140,7 +147,6 @@ input[type="submit"],
 a[href],
 button {
   cursor: pointer;
-  color: inherit;
 }
 
 /* set disabled condition */

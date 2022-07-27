@@ -23,7 +23,7 @@ module.exports = merge(common, {
         historyApiFallback: true,
         open: true,
         compress: true,
-        hot: false,
+        hot: true,
         port: 3000,
         client: {overlay: {errors: true, warnings: false,}},
     },
